@@ -11,11 +11,8 @@ func main() {
 	if err != nil {
 		log.Fatalln(err)
 	}
-	err = tpl.Execute(os.Stdout, 42) //Printout "42" in the html file
+	err = tpl.Execute(os.Stdout, []string{})
 	if err != nil {
 		log.Fatalln(err)
 	}
 }
-
-// Read this
-// https://en.wikipedia.org/wiki/Pipeline_(computing)
